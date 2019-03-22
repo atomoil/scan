@@ -1,6 +1,5 @@
 <html>
-<head>
-    
+<body>
 <style>
 html, body {
     height: 100%;
@@ -17,16 +16,8 @@ img {
 }
 </style>
 <script src="cookie.js"></script>
-</head>
-<body>
-<img id="image_here" />
-<script>
-var img = document.getElementById('image_here')
-if (isLocal()) {
-    img.src = "img/bg_en.png"
-} else {
-    img.src = "img/bg_cn.png"
-}
-</script>
+<button onclick="setCountry('en')">English cookie</button>
+<button onclick="setCountry('cn')">China cookie</button>
+<button onclick="alert(isLocal())">England?</button>
 </body>
 </html>
